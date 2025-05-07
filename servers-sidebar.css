@@ -11,4 +11,10 @@
 	}
 }
 
-@layer components {}
+@layer components {
+	.server {
+		position: relative;
+		display: flex;
+		flex-shrink: 0;
+	}
+}
