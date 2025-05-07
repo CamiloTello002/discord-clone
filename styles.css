@@ -115,3 +115,9 @@
 		height: 100vh;
 	}
 }
+
+@layer utils {
+	.scrollbar-hidden {
+		scrollbar-width: none;
+	}
+}
