@@ -76,3 +76,20 @@
 		cursor: pointer;
 	}
 }
+
+/*I'll literally add some default styles for my application*/
+@layer defaults {
+	body {
+		background-color: var(--bg-color);
+		color: var(--foreground-color);
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	a {
+		color: var(--accent-color);
+		text-decoration: none;
+	}
+
+	* {
+		outline: none;
+	}
