@@ -38,6 +38,14 @@
 			height: 1.5rem;
 			border-top-right-radius: .25rem;
 			border-bottom-right-radius: .25rem;
+			scale: 0;
+			transition-property: height, scale;
+			transition-duration: 150ms;
+			transform-origin: left center;
+
+			@media (prefers-reduced-motion: reduce) {
+				transition: none;
+			}
 		}
 
 		&.active,
