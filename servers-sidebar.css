@@ -2,6 +2,7 @@
 	.servers-sidebar {
 		position: relative;
 		grid-area: servers;
+		background-color: var(--bg-color-darker);
 	}
 }
 
