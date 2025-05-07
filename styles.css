@@ -110,5 +110,6 @@
 			"servers channels-header chat-header chat-header"
 			"servers channels chat chat-sidebar"
 		;
+		height: 100vh;
 	}
 }
