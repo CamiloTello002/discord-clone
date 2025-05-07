@@ -20,15 +20,8 @@
 		flex-shrink: 0;
 		align-items: center;
 		justify-content: center;
-		border-radius: var(--border-radius);
 		width: 3rem;
 		height: 3rem;
-		transition-property: border-radius;
-		transition-duration: 150ms;
-
-		@media (prefers-reduced-motion: reduce) {
-			transition: none;
-		}
 	}
 
 	.server img {
@@ -36,9 +29,13 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
-		border-radius: var(--border-radius);
+	}
+
+	.server,
+	.server img {
 		transition-property: border-radius;
 		transition-duration: 150ms;
+		border-radius: var(--border-radius);
 
 		@media (prefers-reduced-motion: reduce) {
 			transition: none;
