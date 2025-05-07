@@ -1,3 +1,4 @@
+/*Useful for bigger containers*/
 @layer layout {
 	.servers-sidebar {
 		position: relative;
@@ -11,6 +12,8 @@
 	}
 }
 
+/*And, as the name implies, useful for smaller*/
+/*pieces of UI*/
 @layer components {
 	.server {
 		--border-radius: 1.5rem;
@@ -25,6 +28,17 @@
 		background-color: var(--bg-color);
 		color: var(--foreground-color);
 		text-transform: uppercase;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -.75rem;
+			background-color: var(--foreground-color-light);
+			width: .25rem;
+			height: 1.5rem;
+			border-top-right-radius: .25rem;
+			border-bottom-right-radius: .25rem;
+		}
 
 		&.active,
 		&:hover,
