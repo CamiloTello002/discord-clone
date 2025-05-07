@@ -1,4 +1,3 @@
-/*Useful for bigger containers*/
 @layer layout {
 	.servers-sidebar {
 		position: relative;
@@ -12,8 +11,6 @@
 	}
 }
 
-/*And, as the name implies, useful for smaller*/
-/*pieces of UI*/
 @layer components {
 	.server {
 		--border-radius: 1.5rem;
@@ -73,6 +70,17 @@
 			&:hover::before {
 				height: 1.5rem;
 			}
+		}
+
+		/*If the element with .server class has the data-notification-count*/
+		/*attribute, then do something with the ::after pseudo-element*/
+		&[data-notification-count]::after {
+			content: attr(data-notification-count);
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background-color: var(--danger-color);
+			color: var(--danger-foreground-color);
 		}
 	}
 
