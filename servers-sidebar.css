@@ -22,6 +22,9 @@
 		justify-content: center;
 		width: 3rem;
 		height: 3rem;
+		background-color: var(--bg-color);
+		color: var(--foreground-color);
+		text-transform: uppercase;
 	}
 
 	.server img {
