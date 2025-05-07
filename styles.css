@@ -100,3 +100,15 @@
 		box-shadow: 0 0 0 .25rem var(--outline-color);
 	}
 }
+
+@layer layouts {
+	.app-container {
+		display: grid;
+		grid-template-columns: auto 15rem 1fr auto;
+		grid-template-rows: 3rem 1fr;
+		grid-template-areas:
+			"servers channels-header chat-header chat-header"
+			"servers channels chat chat-sidebar"
+		;
+	}
+}
