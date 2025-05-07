@@ -3,6 +3,10 @@
 		position: relative;
 		grid-area: servers;
 		background-color: var(--bg-color-darker);
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		padding: .75rem;
 	}
 }
 
