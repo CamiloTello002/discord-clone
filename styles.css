@@ -9,6 +9,8 @@
 
 @import url("./theme.css");
 
+@import url("./servers-sidebar.css");
+
 @layer reset {
 
 	*,

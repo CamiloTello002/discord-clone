@@ -1,0 +1,8 @@
+@layer layout {
+	.servers-sidebar {
+		position: relative;
+		grid-area: servers;
+	}
+}
+
+@layer components {}
