@@ -63,6 +63,17 @@
 		&.active::before {
 			height: 100%;
 		}
+
+		&.with-new-messages:not(.active) {
+			&::before {
+				height: .5rem;
+				scale: 1;
+			}
+
+			&:hover::before {
+				height: 1.5rem;
+			}
+		}
 	}
 
 	.server img {
