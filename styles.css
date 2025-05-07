@@ -1,0 +1,78 @@
+/*quick explanation:*/
+/*reset overrides some user agent styles so that we have a good start*/
+/*theme is pretty much all the CSS variables*/
+/*so many components will have default styles, so we'll keep them here*/
+/*layout for mroe general containers such as sidebars, sections, and top bars*/
+/*components is self explanatory*/
+/*some useful utility classes*/
+@layer reset, theme, defaults, layouts, components, utils;
+
+@layer reset {
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	* {
+		margin: 0;
+	}
+
+	body {
+		/*1.5 for line height generally makes text easier to read*/
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	img,
+	picture,
+	video,
+	canvas,
+	svg {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	/*make it conform the rest of the application*/
+	/*they often have different font styles, so it's good to override them*/
+	/*(and this is useful, I had to change the font family of textarea when I tried it)*/
+	input,
+	button,
+	textarea,
+	select {
+		font: inherit;
+		line-height: 1;
+	}
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		overflow-wrap: break-word;
+	}
+
+	/*good for long texts*/
+	p {
+		text-wrap: pretty;
+	}
+
+	/*good for headings because they have usually short content*/
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+	}
+
+	button {
+		all: unset;
+		cursor: pointer;
+	}
+}
