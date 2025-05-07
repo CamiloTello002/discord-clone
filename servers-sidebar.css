@@ -25,6 +25,14 @@
 		background-color: var(--bg-color);
 		color: var(--foreground-color);
 		text-transform: uppercase;
+
+		&.active,
+		&:hover,
+		&:focus-within {
+			background-color: var(--accent-color);
+			color: var(--accent-color-foreground);
+			--border-radius: 1rem;
+		}
 	}
 
 	.server img {
