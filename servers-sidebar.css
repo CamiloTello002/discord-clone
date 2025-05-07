@@ -59,6 +59,10 @@
 				scale: 1;
 			}
 		}
+
+		&.active::before {
+			height: 100%;
+		}
 	}
 
 	.server img {
