@@ -81,6 +81,12 @@
 			bottom: 0;
 			background-color: var(--danger-color);
 			color: var(--danger-foreground-color);
+			font-size: 0.75rem;
+			font-weight: bold;
+			padding-inline: .375rem;
+			border: .25rem solid var(--bg-color-darker);
+			border-radius: 1rem;
+			translate: .125rem .125rem;
 		}
 	}
 
