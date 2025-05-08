@@ -15,4 +15,9 @@
 	}
 }
 
-@layer components {}
+@layer components {
+	.channels-sidebar-header .chevron {
+		width: 1.5em;
+		aspect-ratio: 1 / 1;
+	}
+}
