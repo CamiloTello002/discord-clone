@@ -7,6 +7,14 @@
 		padding-inline: 1rem;
 		border-block-end: 1px solid var(--bg-color-darker);
 	}
+
+	.chat-window {
+		grid-area: chat;
+		display: flex;
+		flex-direction: column;
+		padding-block-end: 1rem;
+		overflow: hidden;
+	}
 }
 
 @layer components {
