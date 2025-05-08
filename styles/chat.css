@@ -37,6 +37,10 @@
 			&:focus-visible {
 				color: var(--foreground-color);
 			}
+
+			&.active {
+				color: var(--foreground-color-light);
+			}
 		}
 	}
 }
