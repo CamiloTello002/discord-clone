@@ -80,6 +80,18 @@
 				transition: none;
 			}
 		}
+
+		.x-icon:hover {
+			color: var(--foreground-color);
+		}
+
+		&:has(.search-input:placeholder-shown) .search-icon,
+		&:not(:has(.search-input:placeholder-shown)) .x-icon {
+			opacity: 1;
+			rotate: 0deg;
+			pointer-events: all;
+			visibility: visible;
+		}
 	}
 
 	.search-input {
