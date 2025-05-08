@@ -18,6 +18,10 @@
 		.hash {
 			width: 1rem;
 			aspect-ratio: 1 / 1;
+			color: var(--foreground-color-dark);
+		}
+	}
+
 		}
 	}
 }
