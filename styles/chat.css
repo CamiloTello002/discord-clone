@@ -22,6 +22,21 @@
 		}
 	}
 
+	.icons {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+
+		.icon {
+			width: 1.5em;
+			aspect-ratio: 1 / 1;
+			border-radius: .25rem;
+			color: var(--foreground-color-dark);
+
+			&:hover,
+			&:focus-visible {
+				color: var(--foreground-color);
+			}
 		}
 	}
 }
