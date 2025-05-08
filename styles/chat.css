@@ -9,4 +9,15 @@
 	}
 }
 
-@layer components {}
+@layer components {
+	.channel-name {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+
+		.hash {
+			width: 1rem;
+			aspect-ratio: 1 / 1;
+		}
+	}
+}
