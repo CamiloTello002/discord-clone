@@ -43,4 +43,21 @@
 			}
 		}
 	}
+
+	.search-input-wrapper {
+		position: relative;
+
+		.search-icon,
+		.x-icon {
+			position: absolute;
+			height: 1rem;
+			width: 1rem;
+			top: 50%;
+			right: .25rem;
+			translate: 0 -50%;
+			color: var(--foreground-color-dark);
+			opacity: 0;
+			rotate: 90deg;
+		}
+	}
 }
