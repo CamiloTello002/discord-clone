@@ -35,4 +35,13 @@
 		}
 	}
 
+	.channel {
+		color: var(--foreground-color-dark);
+		padding: .25rem .5rem;
+		border-radius: .25rem;
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+	}
+
 }
