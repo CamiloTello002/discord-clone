@@ -1,0 +1,7 @@
+@layer layouts {
+	.channels-sidebar-header {
+		grid-area: channels-header;
+	}
+}
+
+@layer components {}
