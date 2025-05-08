@@ -161,5 +161,9 @@
 			line-height: 2;
 			justify-self: flex-end;
 		}
+
+		.message-popover-actions {
+			display: none;
+		}
 	}
 }
