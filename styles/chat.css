@@ -49,15 +49,36 @@
 
 		.search-icon,
 		.x-icon {
+			/*Positioning*/
 			position: absolute;
-			height: 1rem;
-			width: 1rem;
 			top: 50%;
 			right: .25rem;
 			translate: 0 -50%;
+
+			/*Dimensions*/
+			height: 1rem;
+			width: 1rem;
+
+			/*Visual styling*/
 			color: var(--foreground-color-dark);
+			border-radius: .25rem;
+
+			/*Transform/state properties*/
 			opacity: 0;
 			rotate: 90deg;
+			visibility: hidden;
+
+			/*Interaction*/
+			pointer-events: none;
+
+			/*Transitions*/
+			transition-property: opacity, rotate, visibility;
+			transition-duration: 150ms;
+			transition-behavior: discrete;
+
+			@media (prefers-reduced-motion: reduce) {
+				transition: none;
+			}
 		}
 	}
 }
