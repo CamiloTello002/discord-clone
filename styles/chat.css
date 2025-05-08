@@ -184,10 +184,52 @@
 					visibility: visible;
 				}
 			}
+
+			&:hover .message-popover-actions,
+			.message-popover-actions:has(:focus-visible) {
+				opacity: 1;
+				pointer-events: all;
+			}
 		}
 
 		.message-popover-actions {
-			display: none;
+			display: flex;
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			pointer-events: none;
+			right: 1rem;
+			translate: 0 -50%;
+			background-color: var(--bg-color-dark);
+			border: 1px solid var(--bg-color-light);
+			border-radius: .5rem;
+			padding: .125rem;
+
+			.action-icon {
+				width: 1.25rem;
+				aspect-ratio: 1 / 1;
+				color: var(--foreground-color-dark);
+				border-radius: .5rem;
+				padding: .25rem;
+
+				svg {
+					transition: scale 150ms;
+				}
+
+				&:hover {
+					color: var(--foreground-color);
+					background-color: var(--bg-color-light);
+
+					svg {
+						scale: 1.1;
+					}
+				}
+
+				&.active {
+					color: var(--foreground-color-light);
+					background-color: var(--bg-color-lighter);
+				}
+			}
 		}
 	}
 }
