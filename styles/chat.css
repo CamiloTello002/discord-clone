@@ -144,5 +144,13 @@
 		grid-template-columns: 3.5rem 1fr;
 		column-gap: 1rem;
 
+		.message-avatar {
+			width: 2.5rem;
+			aspect-ratio: 1 / 1;
+			border-radius: 50%;
+			background-color: var(--bg-color-darker);
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 }
