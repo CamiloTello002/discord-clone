@@ -6,6 +6,17 @@
 		justify-content: space-between;
 		padding-inline: 1rem;
 	}
+
+	.channels-sidebar {
+		grid-area: channels;
+		background-color: var(--bg-color-dark);
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 1rem .5rem;
+		overflow-y: auto;
+	}
+
 }
 
 @layer components {
