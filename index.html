@@ -178,8 +178,8 @@
 				</button>
 			</div>
 		</header>
-		<div class="chat-window scrollbar-minimal">
-			<div class="chat-messages">
+		<div class="chat-window">
+			<div class="chat-messages scrollbar-minimal">
 				<div class="flex-spacer"></div>
 				<div class="message-group">
 					<div class="message-row">
@@ -355,7 +355,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="message-input-wrapper"></div>
+			<div class="message-input-wrapper">
+				<textarea class="message-input" placeholder="Message #trail-ratings"></textarea>
+				<button class="message-input-icon" data-active-toggle="message-input-icon">
+					<svg>
+						<use href="#svg-plus"></use>
+					</svg>
+				</button>
+				<div class="message-input-actions">
+					<button class="message-input-icon" data-active-toggle="message-input-icon">
+						<svg>
+							<use href="#svg-present"></use>
+						</svg>
+					</button>
+					<button class="message-input-icon" data-active-toggle="message-input-icon">
+						<svg>
+							<use href="#svg-gif"></use>
+						</svg> </button>
+					<button class="message-input-icon" data-active-toggle="message-input-icon">
+						<svg>
+							<use href="#svg-sticker"></use>
+						</svg> </button>
+					<button class="message-input-icon" data-active-toggle="message-input-icon">
+						<svg>
+							<use href="#svg-emoji"></use>
+						</svg> </button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
