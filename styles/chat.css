@@ -110,5 +110,9 @@
 		@media (prefers-reduced-motion: reduce) {
 			transition: none;
 		}
+
+		&::placeholder {
+			color: var(--foreground-color-dark);
+		}
 	}
 }
