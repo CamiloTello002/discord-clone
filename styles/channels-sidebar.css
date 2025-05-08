@@ -4,6 +4,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding-inline: 1rem;
+		background-color: var(--bg-color-dark);
+		color: var(--foreground-color);
+		border-block-end: 1px solid var(--bg-color-darker);
+
+		&:hover {
+			background-color: var(--bg-color-light);
+		}
 	}
 }
 
