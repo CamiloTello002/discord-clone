@@ -104,14 +104,6 @@
 }
 
 @layer utils {
-	.scrollbar-hidden {
-		scrollbar-width: none;
-	}
-
-	.outline-inset:focus-visible {
-		box-shadow: inset 0 0 0 .25rem var(--outline-color);
-	}
-
 	.scrollbar-vanishing {
 		scrollbar-width: thin;
 		scrollbar-color: transparent transparent;
@@ -120,5 +112,38 @@
 	.scrollbar-vanishing:hover,
 	.scrollbar-vanishing:focus-within {
 		scrollbar-color: var(--bg-color-darker) transparent;
+	}
+
+	.scrollbar-hidden {
+		scrollbar-width: none;
+	}
+
+	.scrollbar-minimal {
+		scrollbar-width: thin;
+		scrollbar-color: var(--bg-color-darker) transparent;
+	}
+
+	.outline-inset:focus-visible {
+		box-shadow: inset 0 0 0 .25rem var(--outline-color);
+	}
+
+	.text-dark {
+		color: var(--foreground-color-dark);
+	}
+
+	.text-light {
+		color: var(--foreground-color-light);
+	}
+
+	.text-sm {
+		font-size: .75rem;
+	}
+
+	.flex-spacer {
+		flex-grow: 1;
+	}
+
+	.hidden {
+		display: none;
 	}
 }
