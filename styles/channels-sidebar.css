@@ -1,6 +1,9 @@
 @layer layouts {
 	.channels-sidebar-header {
 		grid-area: channels-header;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
 
