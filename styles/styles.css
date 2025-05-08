@@ -3,6 +3,7 @@
 @import url("./theme.css");
 @import url("./servers-sidebar.css");
 @import url("./channels-sidebar.css");
+@import url("./chat.css");
 
 @layer reset {
 

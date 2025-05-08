@@ -1,0 +1,12 @@
+@layer layouts {
+	.chat-header {
+		grid-area: chat-header;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-inline: 1rem;
+		border-block-end: 1px solid var(--bg-color-darker);
+	}
+}
+
+@layer components {}
