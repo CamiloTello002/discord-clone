@@ -151,6 +151,7 @@
 			background-color: var(--bg-color-darker);
 			object-fit: cover;
 			object-position: center;
+			justify-self: flex-end;
 		}
 	}
 }
