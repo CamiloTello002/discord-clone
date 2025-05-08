@@ -74,7 +74,7 @@
 		gap: .25rem;
 
 		&.collapsed {
-			.channel {
+			.channel:not(.active) {
 				display: none;
 			}
 
