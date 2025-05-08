@@ -114,5 +114,10 @@
 		&::placeholder {
 			color: var(--foreground-color-dark);
 		}
+
+		&:focus-visible,
+		&:not(:placeholder-shown) {
+			width: 15rem;
+		}
 	}
 }
