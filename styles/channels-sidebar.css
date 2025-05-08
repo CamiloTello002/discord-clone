@@ -50,6 +50,10 @@
 
 		&.muted {
 			color: var(--foreground-color-darker);
+
+			.hash {
+				color: var(--foreground-color-darker);
+			}
 		}
 
 		&:hover,
