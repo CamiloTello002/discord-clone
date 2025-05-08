@@ -95,6 +95,8 @@
 	}
 
 	.search-input {
+		width: 9rem;
+
 		background-color: var(--bg-color-darker);
 		color: var(--foreground-color);
 		outline: none;
