@@ -81,4 +81,20 @@
 			}
 		}
 	}
+
+	.search-input {
+		background-color: var(--bg-color-darker);
+		color: var(--foreground-color);
+		outline: none;
+		padding: .375em;
+		border: none;
+		border-radius: .25em;
+		font-size: .875rem;
+
+		transition: width 250ms;
+
+		@media (prefers-reduced-motion: reduce) {
+			transition: none;
+		}
+	}
 }
