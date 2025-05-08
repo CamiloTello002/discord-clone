@@ -1,4 +1,4 @@
-@layer layout {
+@layer layouts {
 	.servers-sidebar {
 		position: relative;
 		grid-area: servers;
