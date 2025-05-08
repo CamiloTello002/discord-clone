@@ -110,4 +110,14 @@
 	.outline-inset:focus-visible {
 		box-shadow: inset 0 0 0 .25rem var(--outline-color);
 	}
+
+	.scrollbar-vanishing {
+		scrollbar-width: thin;
+		scrollbar-color: transparent transparent;
+	}
+
+	.scrollbar-vanishing:hover,
+	.scrollbar-vanishing:focus-within {
+		scrollbar-color: var(--bg-color-darker) transparent;
+	}
 }
