@@ -176,6 +176,14 @@
 				gap: .75rem;
 				align-items: baseline;
 			}
+
+			&:hover {
+				background-color: var(--chat-hover-bg-color);
+
+				.message-date {
+					visibility: visible;
+				}
+			}
 		}
 
 		.message-popover-actions {
