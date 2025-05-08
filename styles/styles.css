@@ -1,8 +1,8 @@
 @layer reset, theme, defaults, layouts, components, utils;
 
 @import url("./theme.css");
-
 @import url("./servers-sidebar.css");
+@import url("./channels-sidebar.css");
 
 @layer reset {
 
