@@ -5,6 +5,11 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-inline: 1rem;
+	}
+}
+
+@layer components {
+	.channels-sidebar-header {
 		background-color: var(--bg-color-dark);
 		color: var(--foreground-color);
 		border-block-end: 1px solid var(--bg-color-darker);
@@ -12,12 +17,11 @@
 		&:hover {
 			background-color: var(--bg-color-light);
 		}
-	}
-}
 
-@layer components {
-	.channels-sidebar-header .chevron {
-		width: 1.5em;
-		aspect-ratio: 1 / 1;
+		.chevron {
+			width: 1.5em;
+			aspect-ratio: 1 / 1;
+		}
 	}
+
 }
