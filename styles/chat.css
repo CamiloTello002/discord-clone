@@ -153,5 +153,13 @@
 			object-position: center;
 			justify-self: flex-end;
 		}
+
+		.message-date {
+			visibility: hidden;
+			color: var(--foreground-color-dark);
+			font-size: .75rem;
+			line-height: 2;
+			justify-self: flex-end;
+		}
 	}
 }
