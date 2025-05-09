@@ -61,6 +61,17 @@
 				background-color: var(--bg-color-lighter);
 				opacity: 1;
 			}
+
+			&[data-status] .user-img-wrapper::before {
+				content: "";
+				position: absolute;
+				bottom: -.25rem;
+				right: -.25rem;
+				width: 1.05rem;
+				aspect-ratio: 1 / 1;
+				border-radius: 50%;
+				border: .2rem solid var(--bg-color-dark);
+			}
 		}
 	}
 }
