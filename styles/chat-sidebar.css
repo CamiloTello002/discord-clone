@@ -19,12 +19,37 @@
 		gap: .125rem;
 		padding: .5rem;
 
+		.user-list-group-title {
+			color: var(--foreground-color-dark);
+			font-size: .75rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding-inline-start: .375rem;
+		}
+
+
 		.user-list-row {
 			display: flex;
 			gap: .5rem;
 			align-items: center;
 			padding: .375rem .5rem;
 			border-radius: .375rem;
+
+			&.offline {
+				opacity: .5;
+			}
+
+			.user-img-wrapper {
+				position: relative;
+			}
+
+			.user-img {
+				width: 2rem;
+				aspect-ratio: 1 / 1;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: center;
+			}
 		}
 	}
 }
