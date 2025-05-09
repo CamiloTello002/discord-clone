@@ -12,4 +12,19 @@
 	}
 }
 
-@layer components {}
+@layer components {
+	.user-list-group {
+		display: flex;
+		flex-direction: column;
+		gap: .125rem;
+		padding: .5rem;
+
+		.user-list-row {
+			display: flex;
+			gap: .5rem;
+			align-items: center;
+			padding: .375rem .5rem;
+			border-radius: .375rem;
+		}
+	}
+}
