@@ -269,5 +269,19 @@
 			width: var(--icon-size);
 			color: var(--foreground-color-dark);
 		}
+
+		.message-input {
+			resize: none;
+			background-color: var(--bg-color-light);
+			border-radius: .5rem;
+			border: none;
+			padding-block: var(--padding-block);
+			padding-inline-start: calc(var(--icon-size) + var(--icon-offset) + .25rem);
+			padding-inline-end: calc(var(--icon-size) * 4 + var(--icon-offset) + .25rem);
+			color: var(--foreground-color);
+			line-height: var(--line-height);
+			height: var(--base-height);
+			flex-grow: 1;
+		}
 	}
 }
