@@ -272,6 +272,15 @@
 			svg {
 				width: calc(var(--base-height) - var(--padding-block) - .5rem);
 			}
+
+			&:hover,
+			&:focus-visible {
+				color: var(--foreground-color);
+			}
+
+			&.active {
+				color: var(--foreground-color-light);
+			}
 		}
 
 		.message-input {
