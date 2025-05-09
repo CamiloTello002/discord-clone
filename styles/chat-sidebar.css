@@ -72,6 +72,18 @@
 				border-radius: 50%;
 				border: .2rem solid var(--bg-color-dark);
 			}
+
+			&[data-status="active"] .user-img-wrapper::before {
+				background-color: var(--success-color);
+			}
+
+			&[data-status="inactive"] .user-img-wrapper::before {
+				background-color: var(--warning-color);
+			}
+
+			&[data-status="busy"] .user-img-wrapper::before {
+				background-color: var(--danger-color);
+			}
 		}
 	}
 }
