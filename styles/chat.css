@@ -232,4 +232,42 @@
 			}
 		}
 	}
+
+	.message-input-wrapper {
+		--line-height: 1.25;
+		--icon-offset: .25rem;
+		--padding-block: .875rem;
+		--outline-offset: .25rem;
+		--base-height: calc(var(--padding-block) * 2 + var(--line-height) * 1em);
+		--icon-size: calc(var(--base-height) - var(--icon-offset) * 2);
+
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		margin-inline: 1rem;
+
+		.message-input-actions {
+			display: flex;
+			position: absolute;
+			top: var(--icon-offset);
+			right: var(--icon-offset);
+
+			.message-input-icon {
+				position: static;
+			}
+		}
+
+		.message-input-icon {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: var(--icon-offset);
+			left: var(--icon-offset);
+			border-radius: .25rem;
+			height: var(--icon-size);
+			width: var(--icon-size);
+			color: var(--foreground-color-dark);
+		}
+	}
 }
