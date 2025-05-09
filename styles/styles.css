@@ -4,6 +4,7 @@
 @import url("./servers-sidebar.css");
 @import url("./channels-sidebar.css");
 @import url("./chat.css");
+@import url("./chat-sidebar.css");
 
 @layer reset {
 
