@@ -1,3 +1,15 @@
-@layer layouts {}
+@layer layouts {
+	.chat-sidebar {
+		grid-area: chat-sidebar;
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		width: 15rem;
+		padding-block: .5rem;
+
+		background-color: var(--bg-color-dark);
+		overflow-y: auto;
+	}
+}
 
 @layer components {}
